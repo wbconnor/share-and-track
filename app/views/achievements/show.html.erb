@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @achievement.activity_id %>
+</p>
+
+<p>
+  <strong>Session:</strong>
+  <%= @achievement.session_id %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @achievement.quantity %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @achievement.weight %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @achievement.time %>
+</p>
+
+<%= link_to 'Edit', edit_achievement_path(@achievement) %> |
+<%= link_to 'Back', achievements_path %>

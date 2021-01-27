@@ -1,0 +1,37 @@
+<%= form_with(model: activity, local: true) do |form| %>
+  <% if activity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+
+      <ul>
+      <% activity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.check_box :quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.check_box :weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duration %>
+    <%= form.check_box :duration %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

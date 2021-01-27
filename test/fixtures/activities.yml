@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  quantity: false
+  weight: false
+  duration: false
+
+two:
+  name: MyString
+  quantity: false
+  weight: false
+  duration: false
