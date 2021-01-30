@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :sessions
+  resources :achievements
   resources :activities
   root 'application#hello'
   resources :users

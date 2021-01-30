@@ -10,7 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_20_140030) do
+ActiveRecord::Schema.define(version: 2021_01_27_015519) do
+
+  create_table "achievements", force: :cascade do |t|
+    t.integer "activity_id"
+    t.integer "session_id"
+    t.integer "quantity"
+    t.float "weight"
+    t.float "time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "activities", force: :cascade do |t|
+    t.string "name"
+    t.boolean "quantity"
+    t.boolean "weight"
+    t.boolean "duration"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "acttivities", force: :cascade do |t|
+    t.string "name"
+    t.boolean "quantity"
+    t.boolean "weight"
+    t.boolean "time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"

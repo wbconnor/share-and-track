@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Achievement:</strong>
+  <%= @session.achievement_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @session.user_id %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @session.note %>
+</p>
+
+<p>
+  <strong>Date completed:</strong>
+  <%= @session.date_completed %>
+</p>
+
+<%= link_to 'Edit', edit_session_path(@session) %> |
+<%= link_to 'Back', sessions_path %>
